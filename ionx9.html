@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IONX - Transporti i së Ardhmes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-in-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed w-full z-50 bg-black/80 backdrop-blur text-white shadow-md">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-xl font-bold text-cyan-400">IONX</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#features" class="hover:text-cyan-300">Pse IONX</a>
+        <a href="#team" class="hover:text-cyan-300">Ekipi</a>
+        <a href="#gallery" class="hover:text-cyan-300">Galeria</a>
+        <a href="#contact" class="hover:text-cyan-300">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900 px-6 pt-24">
+    <div class="text-center">
+      <h1 class="text-5xl md:text-7xl font-bold text-cyan-400 drop-shadow-lg animate-pulse">IONX</h1>
+      <p class="mt-4 text-xl md:text-2xl text-gray-300">Motori me fuqi jonike që lëviz të ardhmen.</p>
+      <a href="#features" class="mt-8 inline-block px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-full text-lg transition-all">Zbulo më shumë</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 text-cyan-300">Pse IONX?</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="fade-in">
+          <h3 class="text-2xl font-semibold mb-2">⚡ Efiçiencë maksimale</h3>
+          <p class="text-gray-300">Motori jonik kursen energji dhe ofron shtytje të qëndrueshme pa humbje të energjisë.</p>
+        </div>
+        <div class="fade-in">
+          <h3 class="text-2xl font-semibold mb-2">🌱 Zero ndotje</h3>
+          <p class="text-gray-300">Teknologji që nuk lëshon asnjë gaz ndotës – e pastër për tokën dhe ajrin.</p>
+        </div>
+        <div class="fade-in">
+          <h3 class="text-2xl font-semibold mb-2">🔇 I qetë dhe modern</h3>
+          <p class="text-gray-300">Operacion pa zhurmë – ideal për mjediset urbane dhe transportin e mençur.</p>
+        </div>
+        <div class="fade-in">
+          <h3 class="text-2xl font-semibold mb-2">🚀 Teknologji hapësinore</h3>
+          <p class="text-gray-300">Inspiruar nga NASA – tani në rrugët tona për lëvizje të përditshme.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-20 px-6 bg-black">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div class="w-full md:w-1/2 fade-in">
+        <img src="ictekipi.jpg" alt="Ekipi IONX" class="rounded-lg shadow-xl mx-auto" />
+      </div>
+      <div class="w-full md:w-1/2 text-center md:text-left fade-in">
+        <h2 class="text-4xl font-bold text-cyan-300 mb-6">Ekipi i IONX</h2>
+        <ul class="space-y-2 text-xl text-gray-200">
+          <li>👨‍🔧 Marino Qose</li>
+          <li>🧠 Aristidhis Zhuleku</li>
+          <li>🎨 Klea Callo</li>
+          <li>🚀 Kledi</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-cyan-300 mb-12">Galeria IONX</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <img src="10987654321.jpg" class="rounded-lg shadow-lg fade-in" alt="Foto IONX 1" />
+        <img src="12345678910.jpg" class="rounded-lg shadow-lg fade-in" alt="Foto IONX 2" />
+        <video class="rounded-lg shadow-lg fade-in w-full" controls>
+          <source src="1234567891010987654321.mp4" type="video/mp4" />
+          Shfletuesi juaj nuk e mbështet këtë video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-black">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-cyan-300 mb-8">Na Kontaktoni</h2>
+      <p class="text-gray-400 mb-6">Për bashkëpunime, investime ose pyetje teknike, na shkruani më poshtë:</p>
+      <form class="space-y-4">
+        <input type="text" placeholder="Emri juaj" class="w-full p-3 rounded bg-gray-800 text-white" />
+        <input type="email" placeholder="Email" class="w-full p-3 rounded bg-gray-800 text-white" />
+        <textarea placeholder="Mesazhi juaj..." class="w-full p-3 rounded bg-gray-800 text-white" rows="4"></textarea>
+        <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-full text-white">Dërgo</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center py-8 text-sm text-gray-500">
+    © 2025 IONX – Të ardhmen nuk e presim, e ndërtojmë.
+    <div class="mt-2 space-x-4">
+      <a href="#" class="hover:text-cyan-400">Instagram</a>
+      <a href="#" class="hover:text-cyan-400">LinkedIn</a>
+      <a href="#" class="hover:text-cyan-400">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Animacion -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+</body>
+</html>
